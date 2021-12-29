@@ -44,11 +44,21 @@
   padding-right: 2rem;
 }
 
+@media (max-width: 350px) {
+  nav{
+    zoom: 0.8;
+  }
+  .container__card{
+    zoom: 0.6;
+  }
+}
+
 @media (min-width: 1250px) {
   .container__duolingo {
     padding-left: 10rem;
     padding-right: 10rem;
   }
+  
 }
 @media (min-width: 1450px) {
   .container__duolingo {
