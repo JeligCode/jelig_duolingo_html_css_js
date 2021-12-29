@@ -44,12 +44,36 @@
   padding-right: 2rem;
 }
 
-@media (max-width: 350px) {
-  nav{
+nav {
+  zoom: 0.8;
+}
+.container__card {
+  zoom: 0.5;
+}
+
+@media (min-width: 285px) {
+  nav {
     zoom: 0.8;
   }
-  .container__card{
+  .container__card {
     zoom: 0.6;
+  }
+}
+@media (min-width: 355px) {
+  nav {
+    zoom: 0.9;
+  }
+  .container__card {
+    zoom: 0.8;
+  }
+}
+
+@media (min-width: 450px) {
+  nav {
+    zoom: 1;
+  }
+  .container__card {
+    zoom: 1;
   }
 }
 
@@ -58,7 +82,6 @@
     padding-left: 10rem;
     padding-right: 10rem;
   }
-  
 }
 @media (min-width: 1450px) {
   .container__duolingo {
