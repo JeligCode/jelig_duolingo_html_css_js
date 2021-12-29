@@ -76,14 +76,37 @@ nav {
     zoom: 1;
   }
 }
-
-@media (min-width: 1250px) {
-  .container__duolingo {
-    padding-left: 10rem;
-    padding-right: 10rem;
+/**MD**/
+@media (min-width: 768px) {
+  .subitem:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 15.5em;
+    border: .75rem solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem var(--color5));
   }
 }
-@media (min-width: 1450px) {
+/**LG**/
+@media (min-width: 1024px) {
+  .container__duolingo {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+}
+/**XL**/
+@media (min-width: 1280px) {
+  .container__duolingo {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
+/**2XL**/
+@media (min-width: 1536px) {
   .container__duolingo {
     padding-left: 20rem;
     padding-right: 20rem;

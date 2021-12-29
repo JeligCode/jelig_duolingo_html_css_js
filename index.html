@@ -16,13 +16,13 @@
 
 <body>
     <header class="">
-        <nav class="relative w-full flex flex-wrap items-center justify-between py-3 bg-gray-100 shadow-lg navbar-light container__duolingo">
+        <nav class="relative w-full flex flex-wrap items-center justify-between py-3 bg-slate-50 shadow-lg container__duolingo">
             <a class="hidden md:block" data-test="home-nav" href="/learn">
                 <span class="flex items-center">
                     <div class="">
                         <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/85a54b84f53cfe25fc8d9ff17e5a60f3.svg">
                     </div>
-                    <span class="font-bold text-sm uppercase hidden lg:block text-color1">Aprender</span>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color1">Aprender</span>
                 </span>
             </a>
 
@@ -31,7 +31,7 @@
                     <div class="">
                         <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/b30ce49d39c308bb3031647f31f6c3e9.svg">
                     </div>
-                    <span class="font-bold text-sm uppercase hidden lg:block text-color5">Cuentos</span>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Cuentos</span>
                 </span>
             </a>
 
@@ -40,7 +40,7 @@
                     <div class="">
                         <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/3a52db17e82dec8386d05d126754cefd.svg">
                     </div>
-                    <span class="font-bold text-sm uppercase hidden lg:block text-color5">Debatir</span>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Debatir</span>
                 </span>
             </a>
 
@@ -49,7 +49,7 @@
                     <div class="">
                         <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/25f750f861cdffc01551d728938be59b.svg">
                     </div>
-                    <span class="font-bold text-sm uppercase hidden lg:block text-color5">Tienda</span>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Tienda</span>
                 </span>
             </a>
 
@@ -59,7 +59,7 @@
                         <img class=" "
                             src="//d35aaqx5ub95lt.cloudfront.net/vendor/d3f3ad5d80a9a934e00054f56ec5fbe9.svg">
                     </div>
-                    <span class="font-bold text-sm uppercase hidden lg:block text-color5">Más</span>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Más</span>
                 </span>
             </a>
 
@@ -89,12 +89,24 @@
                     <span class="font-bold text-sm uppercase text-color3" data-test="streak-stat">0</span>
                 </span>
             </div>
+            <!--SUBITEM-->
             <div class="" data-test="lingot-menu">
-                <span class="flex items-center">
+                <span class="flex items-center md:relative"  onmouseover="subitem_lingots()">
                     <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg">
-                    <span class="font-bold text-sm uppercase text-color4" data-test="lingot-stat">357</span>
+                    <span class="font-bold text-sm uppercase text-color4 hover:cursor-context-menu" data-test="lingot-stat">357</span>
+                    <div class="absolute bg-white md:border-solid md:border-2 border-color3 rounded-lg w-full md:w-80 h-30 p-3 z-[100] flex left-0 top-[4.5rem] md:-left-60 md:top-12 subitem hidden" id="subitem-lingots">
+                        <div class="w-24">
+                            <img src="./assets/image/png/cofre-msg.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Lingots</h2>
+                            <h3>Tiene 353 lingotes</h3>
+                            <small class="text-color1 font-bold"><a href="tienda.html">IR A LA TIENDA</a></small>
+                        </div>
+                    </div>
                 </span>
             </div>
+            <!--END SUBITEM-->
             <div class="" data-test="profile-dropdown">
                 <span class="">
                     <img class="rounded-full"
@@ -216,27 +228,27 @@
         </main>
 
         <section>
-            <div class="border-solid border-2 border-color5 p-5 rounded-[2rem] hidden lg:block">
+            <div class="border-solid border-2 border-color3 p-5 rounded-[1.5rem] hidden lg:block">
                 <h2 class="font-bold text-2xl">División Obsidiana</h2>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="flex justify-center gap-4 py-8">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_emerald_blank.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_amethyst_blank.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_pearl_blank.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_obsidian.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_locked.svg">
+                </div>
+                <hr class="bg-color3 border-solid border-[0.1rem] border-color3 -mx-5 ">
+                <div class="flex flex-col justify-center gap-4 py-12">
+                    <img class="w-32 mx-auto" src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/duo_sleeping.svg">
+                    <p class="">Completa una lección para unirte a la Liga de esta semana</p>
+                </div>
             </div>
         </section>
     </section>
+
+
+    <script src="./assets/js/style.js"></script>
+    <script src="./assets/js/subitem.js"></script>
 </body>
 
 </html>

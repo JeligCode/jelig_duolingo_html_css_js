@@ -2,7 +2,6 @@ tailwind.config = {
     theme: {
         container: {
             center: true,
-            padding: '1rem',
         },
         extend: {
             colors: {
@@ -27,3 +26,4 @@ tailwind.config = {
         }
     }
 }
+
