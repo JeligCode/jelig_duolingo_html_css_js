@@ -6012,13 +6012,13 @@ class FlashcardsA {
         this.cards.forEach(card => {
             flashcardsA.innerHTML +=
                 '<div class="flip-card">' +
-                '<div class="flip-card-inner">' +
+                '<div class="flip-card-inner transition duration-75 md:duration-200	">' +
                 '<div class="flip-card-front">' +
                 '<strong>' + card.Front + '</strong>' +
                 '</div>' +
                 '<div class="flip-card-back">' +
-                '<strong>' + card.Back1 + '</strong>' +
-                '<strong>' + card.Back2 + '</strong>' +
+                '<strong class="uppercase">' + card.Back1 + '</strong>' +
+                '<p>' + card.Back2 + '</p>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
@@ -12055,7 +12055,7 @@ class FlashcardsB {
                 '</div>' +
                 '<div class="flip-card-back">' +
                 '<strong>' + card.Back1 + '</strong>' +
-                '<strong>' + card.Back2 + '</strong>' +
+                '<p>' + card.Back2 + '</p>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
