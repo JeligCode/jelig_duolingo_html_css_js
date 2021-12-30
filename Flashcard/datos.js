@@ -6012,7 +6012,7 @@ class FlashcardsA {
         this.cards.forEach(card => {
             flashcardsA.innerHTML +=
                 '<div class="flip-card">' +
-                '<div class="flip-card-inner transition duration-75 md:duration-200	">' +
+                '<div class="flip-card-inner transition duration-75 md:duration-150">' +
                 '<div class="flip-card-front">' +
                 '<strong>' + card.Front + '</strong>' +
                 '</div>' +
