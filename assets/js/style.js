@@ -1,3 +1,9 @@
+h1 = document.getElementsByTagName('h1');
+
+for (let e of h1) {
+    e.classList.add("text-3xl","font-bold","text-gray-600","leading-9","text-center");
+}
+
 h2 = document.getElementsByTagName('h2');
 
 for (let e of h2) {
