@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!--TAILWIND-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../assets/js/tailwind.js"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="">
+        <nav class="relative w-full flex flex-wrap items-center justify-between py-3 bg-slate-50 shadow-lg container__duolingo">
+            <a class="hidden md:block" data-test="home-nav" href="../learn.html">
+                <span class="flex items-center">
+                    <div class="">
+                        <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/85a54b84f53cfe25fc8d9ff17e5a60f3.svg">
+                    </div>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color1">Aprender</span>
+                </span>
+            </a>
+
+            <a class="hidden md:block" data-test="stories-nav" href="../stories.html">
+                <span class="flex items-center">
+                    <div class="">
+                        <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/b30ce49d39c308bb3031647f31f6c3e9.svg">
+                    </div>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Cuentos</span>
+                </span>
+            </a>
+
+            <a class="hidden md:block" data-test="discussion-nav" href="https://forum.duolingo.com/">
+                <span class="flex items-center">
+                    <div class="">
+                        <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/3a52db17e82dec8386d05d126754cefd.svg">
+                    </div>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Debatir</span>
+                </span>
+            </a>
+
+            <a class="hidden md:block" data-test="shop-nav" href="../shop.html">
+                <span class="flex items-center">
+                    <div class="">
+                        <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/25f750f861cdffc01551d728938be59b.svg">
+                    </div>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Tienda</span>
+                </span>
+            </a>
+
+            <a class="hidden md:block" data-test="more-nav" href="../more.html">
+                <span class="flex items-center">
+                    <div class="">
+                        <img class=" "
+                            src="//d35aaqx5ub95lt.cloudfront.net/vendor/d3f3ad5d80a9a934e00054f56ec5fbe9.svg">
+                    </div>
+                    <span class="font-bold text-sm uppercase hidden xl:block text-color5">Más</span>
+                </span>
+            </a>
+
+            <div class="" data-test="courses-menu">
+                <span class="">
+                    <svg viewBox="0 0 82 66" style="height: 32.1951px; width: 40px;">
+                        <image height="2970"
+                            href="//d35aaqx5ub95lt.cloudfront.net/vendor/5874b1f23287dfed314f469f7e980b66.svg"
+                            width="82"
+                            xlink:href="//d35aaqx5ub95lt.cloudfront.net/vendor/5874b1f23287dfed314f469f7e980b66.svg">
+                        </image>
+                    </svg>
+                </span>
+            </div>
+
+            <div class="" data-test="crown-menu">
+                <span class="flex items-center">
+                    <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg">
+                    <span class="font-bold text-sm uppercase text-color2" data-test="crown-stat">686</span>
+                </span>
+            </div>
+
+            <div class="" data-test="streak-menu">
+                <span class="flex items-center">
+                    <img class="" data-test="imageStreakEmpty"
+                        src="//d35aaqx5ub95lt.cloudfront.net/vendor/ba95e6081679d9d7e8c132da5cfce1ec.svg">
+                    <span class="font-bold text-sm uppercase text-color3" data-test="streak-stat">0</span>
+                </span>
+            </div>
+            <!--SUBITEM-->
+            <div class="" data-test="lingot-menu">
+                <span class="flex items-center md:relative"  onmouseover="subitem_lingots()">
+                    <img class="" src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg">
+                    <span class="font-bold text-sm uppercase text-color4 hover:cursor-context-menu" data-test="lingot-stat">357</span>
+                    <div class="absolute bg-white md:border-solid md:border-2 border-color3 rounded-lg w-full md:w-80 h-30 p-3 z-[100] flex left-0 top-[4.5rem] md:-left-60 md:top-12 subitem hidden" id="subitem-lingots">
+                        <div class="w-24">
+                            <img src="./assets/image/png/cofre-msg.png" alt="">
+                        </div>
+                        <div>
+                            <h2>Lingots</h2>
+                            <h3>Tiene 353 lingotes</h3>
+                            <small class="text-color1 font-bold"><a href="tienda.html">IR A LA TIENDA</a></small>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <!--END SUBITEM-->
+            <div class="" data-test="profile-dropdown">
+                <span class="">
+                    <img class="rounded-full"
+                        src="//duolingo-images.s3.amazonaws.com/avatars/478959308/9FaexnMEgB/medium">
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container py-12 grid grid-cols-1 lg:grid-cols-2 lg:gap-16 lg:max-w-max">
+        <main class="container__card">
+            <!--BODY TEXT-->
+            <section class="p-2">
+               <div>
+                   <h2>Plural Forms of Count Nouns</h2>
+                   <h3>Regular Plurals</h3>
+                   <p>The regular plural is most often written as -s. For
+                    example:</p>
+               </div>
+
+            </section>
+            <!--END BODY TEXT-->
+        </main>
+
+        <section>
+            <div class="border-solid border-2 border-color3 p-5 rounded-[1.5rem] hidden lg:block">
+                <h2 class="font-bold text-2xl">División Obsidiana</h2>
+                <div class="flex justify-center gap-4 py-8">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_emerald_blank.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_amethyst_blank.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_pearl_blank.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_obsidian.svg">
+                    <img src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/badge_locked.svg">
+                </div>
+                <hr class="bg-color3 border-solid border-[0.1rem] border-color3 -mx-5 ">
+                <div class="flex flex-col justify-center gap-4 py-12">
+                    <img class="w-32 mx-auto" src="//d35aaqx5ub95lt.cloudfront.net/images/leagues/duo_sleeping.svg">
+                    <p class="">Completa una lección para unirte a la Liga de esta semana</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="../assets/js/style.js"></script>
+    <script src="../assets/js/subitem.js"></script>
+</body>
+
+</html>

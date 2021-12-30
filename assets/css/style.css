@@ -50,6 +50,98 @@ nav {
 .container__card {
   zoom: 0.5;
 }
+table {
+  border: 1px solid var(--color5);
+  border-color: var(--color5) !important;
+  border-collapse: separate !important;
+  border-left: 0;
+  border-radius: 12px;
+  border-spacing: 0px;
+  margin: 1rem;
+}
+thead {
+  vertical-align: middle;
+  border-collapse: separate;
+  background-color: var(--color3);
+}
+
+th,
+td {
+  padding: 10px 6px;
+  text-align: left;
+  vertical-align: top;
+  border-left: 1px solid var(--color5);
+  border-bottom: 1px solid var(--color5);
+}
+
+thead:first-child tr:first-child th:first-child,
+tbody:first-child tr:first-child td:first-child {
+  border-radius: 12px 0 0 0;
+}
+tbody:last-child tr:last-child td:first-child {
+  border-radius: 0 0 0 12px;
+  border-bottom: none;
+}
+tbody:last-child tr:last-child td:last-child {
+  border-radius: 0 0 12px 0;
+  border-bottom: none;
+}
+thead:first-child tr:last-child th:last-child {
+  border-radius: 0 12px 0 0;
+}
+
+/**/
+.flip-card {
+  background-color: transparent;
+  width: 15rem;
+  height: 15rem;
+  perspective: 1000px;
+  margin: 1rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size:1.5rem;
+  padding:0.5rem;
+}
+
+.flip-card-front {
+  background-color: var(--color1);
+  border: 6px solid var(--color2);
+  box-shadow: 6px 6px var(--color1);
+  color: white;
+}
+
+.flip-card-back {
+  background-color: var(--color2);
+  border: 6px solid var(--color1);
+  box-shadow: 6px 6px var(--color2);
+  color: black;
+  transform: rotateY(180deg);
+}
+/**/
 
 @media (min-width: 285px) {
   nav {
@@ -79,13 +171,13 @@ nav {
 /**MD**/
 @media (min-width: 768px) {
   .subitem:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     height: 0;
     bottom: 100%;
     left: 15.5em;
-    border: .75rem solid transparent;
+    border: 0.75rem solid transparent;
     border-top: none;
     border-bottom-color: #fff;
     filter: drop-shadow(0 -0.0625rem 0.0625rem var(--color5));
