@@ -97,6 +97,7 @@ thead:first-child tr:last-child th:last-child {
   height: 15rem;
   perspective: 1000px;
   margin: 1rem;
+  cursor: context-menu;
 }
 
 .flip-card-inner {
@@ -112,7 +113,6 @@ thead:first-child tr:last-child th:last-child {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -132,6 +132,7 @@ thead:first-child tr:last-child th:last-child {
   border: 6px solid var(--color2);
   box-shadow: 6px 6px var(--color1);
   color: white;
+  text-transform:uppercase;
 }
 
 .flip-card-back {
